@@ -13,7 +13,7 @@ services:
       ansible:
         ipv4_address: 192.168.250.254
     volumes:
-      - /root/python_lab/shared/:/root/utility/
+      - /root/python_lab/docker-compose/ansible.lab/shared/:/root/utility/
     privileged: true
     container_name: jenkins
     hostname: jenkins
