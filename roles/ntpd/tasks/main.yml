@@ -1,0 +1,8 @@
+---
+- name: show chronyc tracking
+  command: "chronyc tracking"
+  register: tracking
+
+- name: show time_status
+  degug: 
+    msg: "{{ tracking.stdout.split('\n')}}"
